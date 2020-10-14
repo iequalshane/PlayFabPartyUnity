@@ -12,6 +12,7 @@ namespace PartyCSharpSDK
             this.MaxUsersPerDeviceCount = interopStruct.maxUsersPerDeviceCount;
             this.MaxDevicesPerUserCount = interopStruct.maxDevicesPerUserCount;
             this.MaxEndpointsPerDeviceCount = interopStruct.maxEndpointsPerDeviceCount;
+            this.DirectPeerConnectivityOptions = interopStruct.directPeerConnectivityOptions;
         }
 
         public PARTY_NETWORK_CONFIGURATION()
@@ -23,5 +24,6 @@ namespace PartyCSharpSDK
         public UInt32 MaxUsersPerDeviceCount { get; set; }
         public UInt32 MaxDevicesPerUserCount { get; set; }
         public UInt32 MaxEndpointsPerDeviceCount { get; set; }
+        public PARTY_DIRECT_PEER_CONNECTIVITY_OPTIONS DirectPeerConnectivityOptions { get; set; }
     }
 }

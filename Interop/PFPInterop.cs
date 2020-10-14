@@ -13,6 +13,8 @@ namespace PartyCSharpSDK.Interop
         const string ThunkDllName = "__Internal";
 #elif UNITY_ANDROID && !UNITY_EDITOR
         const string ThunkDllName = "party";
+#elif UNITY_PS4 && !UNITY_EDITOR
+        const string ThunkDllName = "Party.prx";
 #else
         const string ThunkDllName = "PartyWin32";
 #endif
